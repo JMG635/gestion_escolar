@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gestión escolar</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="contenedor">
+  <h1>Gestión escolar</h1>
+  <p class="sub">Registra tus tareas, cambia su estado y mantén todo guardado en la base de datos.</p>
+
+  <section class="hoja">
+    <h2 id="titulo-form">Nueva actividad</h2>
+    <div id="mensaje" role="alert"></div>
+    <form id="form" novalidate>
+      <label>Nombre de la actividad
+        <input id="nombre" maxlength="100" placeholder="Ej. Ensayo sobre la Revolución">
+      </label>
+      <label>Materia
+        <input id="materia" maxlength="60" placeholder="Ej. Historia">
+      </label>
+      <label>Prioridad
+        <select id="prioridad">
+          <option value="">Selecciona…</option>
+          <option>Alta</option><option>Media</option><option>Baja</option>
+        </select>
+      </label>
+      <div class="acciones">
+        <button type="submit" id="btn-guardar">Guardar actividad</button>
+        <button type="button" class="sec" id="btn-cancelar" hidden>Cancelar edición</button>
+      </div>
+    </form>
+  </section>
+
+  <section class="hoja">
+    <h2>Mis actividades</h2>
+    <div class="tabla-wrap">
+      <table>
+        <thead><tr><th>Actividad</th><th>Materia</th><th>Prioridad</th><th>Estado</th><th>Acciones</th></tr></thead>
+        <tbody id="tabla"></tbody>
+      </table>
+    </div>
+  </section>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

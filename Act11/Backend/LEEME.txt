@@ -1,0 +1,5 @@
+1) Instalar Node.js (v18 o superior): https://nodejs.org
+2) En la carpeta del proyecto ejecutar:  npm install
+3) Iniciar:  npm start
+4) Abrir en el navegador:  http://localhost:3000
+Los datos se guardan en el archivo escolar.db (SQLite).

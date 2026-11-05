@@ -1,0 +1,10 @@
+{
+  "name": "gestion-escolar",
+  "version": "1.0.0",
+  "description": "Sistema de gestión de actividades escolares (CRUD) con Node.js, Express y SQLite",
+  "main": "server.js",
+  "scripts": { "start": "node server.js" },
+ "dependencies": {
+  "express": "^4.21.0"
+}
+}
